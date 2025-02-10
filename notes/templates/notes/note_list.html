@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mes Notes</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+</head>
+<body>
+    <h1>Mes Notes</h1>
+    <a href="{% url 'add_note' %}">➕ Ajouter une note</a>
+    <ul>
+        {% for note in notes %}
+            <li><strong>{{ note.title }}</strong>: {{ note.content }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
