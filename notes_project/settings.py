@@ -43,7 +43,11 @@ SECRET_KEY = 'django-insecure-u_z-*8!1dz^l4p0-!e)d^a=*!ui^ygp-nffq!#2z5r8#tj71*u
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+       'notes-project-wyxc.onrender.com',
+       'localhost',  # Pour le développement local
+       '127.0.0.1',  # Pour le développement local
+   ]
 
 
 # Application definition
